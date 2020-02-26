@@ -3,6 +3,10 @@ import App from "./App.vue";
 import router from "./router";
 import "@/styles/global.scss";
 
+// jquery
+import JQuery from "jquery";
+window.$ = JQuery;
+
 // bootstrap
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 Vue.use(BootstrapVue);
