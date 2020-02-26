@@ -48,7 +48,7 @@
                   <br />It serves as the home organization of MIS-majors and IT
                   enthusiasts.
                   <br />
-                  <br />Founded in 1997, it is now on it's 21st year of pursuing
+                  <br />Founded in 1994, it is now on it's 21st year of pursuing
                   its main advocacy: social transformation through information
                   management.
                 </p>
