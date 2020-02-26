@@ -1,0 +1,45 @@
+// font-sizes (fixed)
+$font-size--9: 3.052em; // 48.83px
+$font-size--8: 2.441em; // 39.06px
+$font-size--7: 1.953em; // 31.25px
+$font-size--6: 1.563em; // 25.00px
+$font-size--5: 1.25em; // 20.00px
+$font-size--4: 1em; // 16.00px (DEFAULT)
+$font-size--3: 0.8em; // 12.80px
+$font-size--2: 0.64em; // 10.24px
+$font-size--1: 0.512em; // 8.19px
+
+// colors
+$teal: #007a7a;
+$alpha-teal: rgba(0, 63, 90, 0.85);
+$orange: #de6600;
+$alpha-orange: rgba(222, 102, 0, 0.85);
+$light-orange: #fea02f;
+$orange-gradient: linear-gradient(270deg, #fea02f 48.82%, rgba(254, 160, 47, 0) 100%),
+linear-gradient(90deg, #de6600 53.12%, rgba(222, 102, 0, 0) 100%);
+$navy: #003f5a;
+$offwhite--1: #ebd9cb;
+$offwhite--2: #ebd9c8;
+$gray: #eeeeee;
+$white: #fff;
+$black: #000;
+
+/* Breakpoints to use
+I could make a _mixins.scss but im lazy
+
+@media screen and (max-width: 1199px) { }
+
+@media screen and (max-width: 991px) { }
+
+@media screen and (max-width: 768px) { }
+
+@media screen and (max-width: 575px) { }
+
+IPAD PRO BREAKPOINT 
+@media screen 
+and (max-width: 1199px) 
+and (max-height: 1366px) 
+and (orientation: portrait)  {
+  
+}
+*/
