@@ -2,16 +2,13 @@
   <footer>
     <div class="footer center-wrapper">
       <div class="sm-wrapper">
-        <a class="sm-icon fb" href="https://www.facebook.com/MISAIMSummit"> </a>
-        <a
-          class="sm-icon twit"
-          href="https://twitter.com/ateneomisa?lang=en"
-        ></a>
+        <a class="sm-icon fb" href="https://www.facebook.com/MISAIMSummit"></a>
+        <a class="sm-icon twit" href="https://twitter.com/ateneomisa?lang=en"></a>
         <a class="sm-icon ig" href="https://www.instagram.com/ateneomisa/"></a>
       </div>
 
       <div class="logo-wrapper">
-        <div class="misa-logo"></div>
+        <a class="misa-logo" href="https://misa.org.ph/"></a>
       </div>
     </div>
   </footer>

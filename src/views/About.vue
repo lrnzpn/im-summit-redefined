@@ -247,7 +247,7 @@ section {
           font-size: $font-size--4;
         }
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 575px) {
           font-size: $font-size--3;
         }
       }
