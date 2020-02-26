@@ -22,7 +22,7 @@
                       class="flex-start"
                     >
                       <label for="teamName">Team Name</label>
-                      <input type="text" name="TeamName" />
+                      <input type="text" name="TeamName" v-model="TeamName" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -33,7 +33,7 @@
                       class="flex-end"
                     >
                       <label for="university">University</label>
-                      <input type="text" name="TeamLeaderUniversity" />
+                      <input type="text" name="TeamLeaderUniversity" v-model="TeamLeaderUniversity" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -45,7 +45,7 @@
                       class="flex-start"
                     >
                       <label for="teamLeader">Team Leader</label>
-                      <input type="text" name="TeamLeader" />
+                      <input type="text" name="TeamLeader" v-model="TeamLeader" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -56,7 +56,7 @@
                       class="flex-end"
                     >
                       <label for="mobileNumber">Mobile Number</label>
-                      <input type="text" name="MobileNumber" />
+                      <input type="text" name="MobileNumber" v-model="MobileNumber" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -68,7 +68,7 @@
                       class="flex-start"
                     >
                       <label for="yearCourse">Year & Course</label>
-                      <input type="text" name="Course" />
+                      <input type="text" name="Course" v-model="Course" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -79,7 +79,7 @@
                       class="flex-end"
                     >
                       <label for="email">Email Address</label>
-                      <input type="text" name="Email" />
+                      <input type="text" name="Email" v-model="Email" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -100,7 +100,7 @@
                       class="flex-start"
                     >
                       <label for="mem1">Member 1</label>
-                      <input type="text" name="FirstMemberName" />
+                      <input type="text" name="FirstMemberName" v-model="FirstMemberName" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -111,7 +111,7 @@
                       class="flex-end"
                     >
                       <label for="mem2">Member 2</label>
-                      <input type="text" name="SecondMemberName" />
+                      <input type="text" name="SecondMemberName" v-model="SecondMemberName" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -124,7 +124,7 @@
                       class="flex-start"
                     >
                       <label for="yc1">Year & Course</label>
-                      <input type="text" name="FirstMemberCourse" />
+                      <input type="text" name="FirstMemberCourse" v-model="FirstMemberCourse" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -135,7 +135,7 @@
                       class="flex-end"
                     >
                       <label for="yc2">Year & Course</label>
-                      <input type="text" name="SecondMemberCourse" />
+                      <input type="text" name="SecondMemberCourse" v-model="SecondMemberCourse" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -148,7 +148,11 @@
                       class="flex-start"
                     >
                       <label for="uni1">University</label>
-                      <input type="text" name="FirstMemberUniversity" />
+                      <input
+                        type="text"
+                        name="FirstMemberUniversity"
+                        v-model="FirstMemberUniversity"
+                      />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -159,7 +163,11 @@
                       class="flex-end"
                     >
                       <label for="uni2">University</label>
-                      <input type="text" name="SecondMemberUniversity" />
+                      <input
+                        type="text"
+                        name="SecondMemberUniversity"
+                        v-model="SecondMemberUniversity"
+                      />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -167,7 +175,7 @@
                   <div class="app-row" style="margin-top:5%;">
                     <ValidationProvider
                       name="Member 3"
-                      rules=""
+                      rules
                       v-slot="{ errors }"
                       class="flex-start"
                     >
@@ -176,12 +184,7 @@
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
-                    <ValidationProvider
-                      name="Member 4"
-                      rules=""
-                      v-slot="{ errors }"
-                      class="flex-end"
-                    >
+                    <ValidationProvider name="Member 4" rules v-slot="{ errors }" class="flex-end">
                       <label for="mem4">Member 4</label>
                       <input type="text" name="FourthMemberName" />
                       <span>{{ errors[0] }}</span>
@@ -189,21 +192,13 @@
                   </div>
 
                   <div class="app-row">
-                    <ValidationProvider
-                      name="Year & Course"
-                      v-slot="{ errors }"
-                      class="flex-start"
-                    >
+                    <ValidationProvider name="Year & Course" v-slot="{ errors }" class="flex-start">
                       <label for="yc3">Year & Course</label>
                       <input type="text" name="ThirdMemberCourse" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
-                    <ValidationProvider
-                      name="Year & Course"
-                      v-slot="{ errors }"
-                      class="flex-end"
-                    >
+                    <ValidationProvider name="Year & Course" v-slot="{ errors }" class="flex-end">
                       <label for="yc4">Year & Course</label>
                       <input type="text" name="FourthMemberCourse" />
                       <span>{{ errors[0] }}</span>
@@ -211,21 +206,13 @@
                   </div>
 
                   <div class="app-row">
-                    <ValidationProvider
-                      name="University"
-                      v-slot="{ errors }"
-                      class="flex-start"
-                    >
+                    <ValidationProvider name="University" v-slot="{ errors }" class="flex-start">
                       <label for="uni3">University</label>
                       <input type="text" name="ThirdMemberUniversity" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
-                    <ValidationProvider
-                      name="University"
-                      v-slot="{ errors }"
-                      class="flex-end"
-                    >
+                    <ValidationProvider name="University" v-slot="{ errors }" class="flex-end">
                       <label for="uni4">University</label>
                       <input type="text" name="FourthMemberUniversity" />
                       <span>{{ errors[0] }}</span>
@@ -233,11 +220,7 @@
                   </div>
                 </div>
                 <div class="im">
-                  <ValidationProvider
-                    name="IM Question"
-                    rules="required"
-                    v-slot="{ errors }"
-                  >
+                  <ValidationProvider name="IM Question" rules="required" v-slot="{ errors }">
                     <label for="im">What is Information Management (IM)?</label>
                     <textarea name="WhatisIM" />
                     <span>{{ errors[0] }}</span>
@@ -245,10 +228,10 @@
                 </div>
                 <div class="terms">
                   <input type="checkbox" v-model="checked" />
-                  <label for="checkbox"
-                    >I accept the terms and conditions and privacy
-                    policy.</label
-                  >
+                  <label for="checkbox">
+                    I accept the terms and conditions and privacy
+                    policy.
+                  </label>
                 </div>
                 <div class="btn-container">
                   <button type="submit" class="btn-navy">apply</button>
@@ -266,14 +249,35 @@
 export default {
   data() {
     return {
-      checked: false
+      checked: false,
+      TeamName: "",
+      TeamLeaderUniversity: "",
+      TeamLeader: "",
+      MobileNumber: "",
+      Course: "",
+      Email: "",
+      FirstMemberName: "",
+      FirstMemberCourse: "",
+      FirstMemberUniversity: "",
+      SecondMemberName: "",
+      SecondMemberCourse: "",
+      SecondMemberUniversity: "",
+      WhatisIM: ""
     };
   },
 
   methods: {
     onSubmit: function() {
-      if (this.checked !== true) {
-        alert("Please accept the terms and conditions.");
+      if (
+        this.checked !== true &&
+        (this.TeamName === "" ||
+          this.TeamLeaderUniversity === "" ||
+          this.TeamLeader === "" ||
+          this.FirstMemberName === "" ||
+          this.SecondMemberName === "" ||
+          this.WhatisIM === "")
+      ) {
+        alert("Please complete the necessary fields.");
       } else {
         alert("Your application form has been sent!");
 

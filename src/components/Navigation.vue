@@ -16,11 +16,11 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <router-link v-for="link in links" :key="link.id" :to="link.page" class="nav-link">
+          <b-nav-item v-for="link in links" :key="link.id" :href="link.page" class="nav-link">
             {{
             link.text
             }}
-          </router-link>
+          </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
