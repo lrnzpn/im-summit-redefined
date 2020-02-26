@@ -35,8 +35,7 @@
 
               <li>
                 <span>
-                  Do I have to attend the talks to compete in the
-                  competition?
+                  Do I have to attend the talks to compete in the competition?
                 </span>
                 <p>
                   Yes, the talks will be at March 28, 2020 (12:00nn - 5:00pm).
@@ -78,7 +77,7 @@
 export default {
   data() {
     return {
-      place: "Escaler Hall"
+      place: "TBA"
     };
   }
 };

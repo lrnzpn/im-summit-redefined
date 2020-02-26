@@ -2,9 +2,12 @@
   <footer>
     <div class="footer center-wrapper">
       <div class="sm-wrapper">
-        <div class="sm-icon fb"></div>
-        <div class="sm-icon twit"></div>
-        <div class="sm-icon ig"></div>
+        <a class="sm-icon fb" href="https://www.facebook.com/MISAIMSummit"> </a>
+        <a
+          class="sm-icon twit"
+          href="https://twitter.com/ateneomisa?lang=en"
+        ></a>
+        <a class="sm-icon ig" href="https://www.instagram.com/ateneomisa/"></a>
       </div>
 
       <div class="logo-wrapper">

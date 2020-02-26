@@ -22,7 +22,7 @@
                       class="flex-start"
                     >
                       <label for="teamName">Team Name</label>
-                      <input v-model="teamName" type="text" name="TeamName" />
+                      <input type="text" name="TeamName" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -33,11 +33,7 @@
                       class="flex-end"
                     >
                       <label for="university">University</label>
-                      <input
-                        v-model="university"
-                        type="text"
-                        name="TeamLeaderUniversity"
-                      />
+                      <input type="text" name="TeamLeaderUniversity" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -49,11 +45,7 @@
                       class="flex-start"
                     >
                       <label for="teamLeader">Team Leader</label>
-                      <input
-                        v-model="teamLeader"
-                        type="text"
-                        name="TeamLeader"
-                      />
+                      <input type="text" name="TeamLeader" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -64,11 +56,7 @@
                       class="flex-end"
                     >
                       <label for="mobileNumber">Mobile Number</label>
-                      <input
-                        v-model="mobileNumber"
-                        type="text"
-                        name="MobileNumber"
-                      />
+                      <input type="text" name="MobileNumber" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -80,7 +68,7 @@
                       class="flex-start"
                     >
                       <label for="yearCourse">Year & Course</label>
-                      <input v-model="yearCourse" type="text" name="Course" />
+                      <input type="text" name="Course" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -91,7 +79,7 @@
                       class="flex-end"
                     >
                       <label for="email">Email Address</label>
-                      <input v-model="email" type="text" name="Email" />
+                      <input type="text" name="Email" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -112,11 +100,7 @@
                       class="flex-start"
                     >
                       <label for="mem1">Member 1</label>
-                      <input
-                        v-model="mem1"
-                        type="text"
-                        name="FirstMemberName"
-                      />
+                      <input type="text" name="FirstMemberName" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -127,11 +111,7 @@
                       class="flex-end"
                     >
                       <label for="mem2">Member 2</label>
-                      <input
-                        v-model="mem2"
-                        type="text"
-                        name="SecondMemberName"
-                      />
+                      <input type="text" name="SecondMemberName" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -144,11 +124,7 @@
                       class="flex-start"
                     >
                       <label for="yc1">Year & Course</label>
-                      <input
-                        v-model="yc1"
-                        type="text"
-                        name="FirstMemberCourse"
-                      />
+                      <input type="text" name="FirstMemberCourse" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -159,11 +135,7 @@
                       class="flex-end"
                     >
                       <label for="yc2">Year & Course</label>
-                      <input
-                        v-model="yc2"
-                        type="text"
-                        name="SecondMemberCourse"
-                      />
+                      <input type="text" name="SecondMemberCourse" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -176,11 +148,7 @@
                       class="flex-start"
                     >
                       <label for="uni1">University</label>
-                      <input
-                        v-model="uni1"
-                        type="text"
-                        name="FirstMemberUniversity"
-                      />
+                      <input type="text" name="FirstMemberUniversity" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -191,11 +159,7 @@
                       class="flex-end"
                     >
                       <label for="uni2">University</label>
-                      <input
-                        v-model="uni2"
-                        type="text"
-                        name="SecondMemberUniversity"
-                      />
+                      <input type="text" name="SecondMemberUniversity" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -208,11 +172,7 @@
                       class="flex-start"
                     >
                       <label for="mem3">Member 3</label>
-                      <input
-                        v-model="mem3"
-                        type="text"
-                        name="ThirdMemberName"
-                      />
+                      <input type="text" name="ThirdMemberName" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -223,11 +183,7 @@
                       class="flex-end"
                     >
                       <label for="mem4">Member 4</label>
-                      <input
-                        v-model="mem4"
-                        type="text"
-                        name="FourthMemberName"
-                      />
+                      <input type="text" name="FourthMemberName" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -239,11 +195,7 @@
                       class="flex-start"
                     >
                       <label for="yc3">Year & Course</label>
-                      <input
-                        v-model="yc3"
-                        type="text"
-                        name="ThirdMemberCourse"
-                      />
+                      <input type="text" name="ThirdMemberCourse" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -253,11 +205,7 @@
                       class="flex-end"
                     >
                       <label for="yc4">Year & Course</label>
-                      <input
-                        v-model="yc4"
-                        type="text"
-                        name="FourthMemberCourse"
-                      />
+                      <input type="text" name="FourthMemberCourse" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -269,11 +217,7 @@
                       class="flex-start"
                     >
                       <label for="uni3">University</label>
-                      <input
-                        v-model="uni3"
-                        type="text"
-                        name="ThirdMemberUniversity"
-                      />
+                      <input type="text" name="ThirdMemberUniversity" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
 
@@ -283,11 +227,7 @@
                       class="flex-end"
                     >
                       <label for="uni4">University</label>
-                      <input
-                        v-model="uni4"
-                        type="text"
-                        name="FourthMemberUniversity"
-                      />
+                      <input type="text" name="FourthMemberUniversity" />
                       <span>{{ errors[0] }}</span>
                     </ValidationProvider>
                   </div>
@@ -299,7 +239,7 @@
                     v-slot="{ errors }"
                   >
                     <label for="im">What is Information Management (IM)?</label>
-                    <textarea v-model="im" name="WhatisIM" />
+                    <textarea name="WhatisIM" />
                     <span>{{ errors[0] }}</span>
                   </ValidationProvider>
                 </div>
