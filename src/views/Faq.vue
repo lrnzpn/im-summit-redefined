@@ -24,21 +24,19 @@
                 <p>
                   Ateneo de Manila University
                   <br />
-                  March 21, 2020 - {{ place }}
+                  April 18, 2020 - {{ place }}
                   <br />
-                  March 28, 2020 -
+                  April 25, 2020 -
                   {{ place }}
                   <br />
-                  April 4, 2020 - {{ place }}
+                  May 2, 2020 - {{ place }}
                 </p>
               </li>
 
               <li>
-                <span>
-                  Do I have to attend the talks to compete in the competition?
-                </span>
+                <span>Do I have to attend the talks to compete in the competition?</span>
                 <p>
-                  Yes, the talks will be at March 28, 2020 (12:00nn - 5:00pm).
+                  Yes, the talks will be at April 25, 2020 (12:00nn - 5:00pm).
                   At least half of your group should be present in the talks in
                   order to compete in the competition. Should your members be
                   not available during the talks due to a valid reason, please
