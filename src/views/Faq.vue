@@ -16,7 +16,7 @@
                 <p>
                   IM Summit is open to undergraduate students of all
                   universities within the metropolitan area. You don't have to
-                  be an IT major to appy! Prior knowledge in IT is not required.
+                  be an IT major to apply! Prior knowledge in IT is not required.
                 </p>
               </li>
               <li>
@@ -46,7 +46,7 @@
               <li>
                 <span>Is the pitching done individually or by group?</span>
                 <p>
-                  The pitching competition will be done in groups of 3-5 per
+                  The pitching competition will be done in groups of 4-5 per
                   team.
                 </p>
               </li>

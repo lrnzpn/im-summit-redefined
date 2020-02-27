@@ -116,7 +116,7 @@
                   <div class="num-container">
                     <div class="one logo-img"></div>
                   </div>
-                  <div>Form a team with 3-5 members. Members of a team need not be from the same course or university.</div>
+                  <div>Form a team with 4-5 members. Members of a team need not be from the same course or university.</div>
                 </li>
                 <li class="tl-bp">
                   <span id="line-divider" class="line-2"></span>

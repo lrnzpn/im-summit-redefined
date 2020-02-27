@@ -175,7 +175,7 @@
                   <div class="app-row" style="margin-top:5%;">
                     <ValidationProvider
                       name="Member 3"
-                      rules
+                      rules="required"
                       v-slot="{ errors }"
                       class="flex-start"
                     >
@@ -192,7 +192,12 @@
                   </div>
 
                   <div class="app-row">
-                    <ValidationProvider name="Year & Course" v-slot="{ errors }" class="flex-start">
+                    <ValidationProvider
+                      name="Year & Course"
+                      v-slot="{ errors }"
+                      rules="required"
+                      class="flex-start"
+                    >
                       <label for="yc3">Year & Course</label>
                       <input type="text" name="ThirdMemberCourse" />
                       <span>{{ errors[0] }}</span>
@@ -206,7 +211,12 @@
                   </div>
 
                   <div class="app-row">
-                    <ValidationProvider name="University" v-slot="{ errors }" class="flex-start">
+                    <ValidationProvider
+                      name="University"
+                      rules="required"
+                      v-slot="{ errors }"
+                      class="flex-start"
+                    >
                       <label for="uni3">University</label>
                       <input type="text" name="ThirdMemberUniversity" />
                       <span>{{ errors[0] }}</span>

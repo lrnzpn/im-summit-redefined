@@ -17,7 +17,7 @@
                   that brings forth business and IT together to create real
                   value.
                   <br />
-                  <br />With a 35,000 peso prize pool at stake, participants put
+                  <br />With a 60,000 peso prize pool at stake, participants put
                   their experience and creativity to test and solve a real-life
                   business problems.
                   <br />
