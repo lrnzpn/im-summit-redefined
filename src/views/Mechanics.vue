@@ -27,7 +27,7 @@
                 <div class="mech-container">
                   <div class="mech-date">
                     <span>Mar</span>
-                    <span class="date">4</span>
+                    <span class="date">14</span>
                   </div>
                   <div class="mech-icons">
                     <div class="bird logo-img"></div>
@@ -44,7 +44,7 @@
                 <div class="mech-container">
                   <div class="mech-date">
                     <span>Mar</span>
-                    <span class="date">5</span>
+                    <span class="date">15</span>
                   </div>
                   <div class="mech-icons">
                     <div class="sheets logo-img"></div>
@@ -57,8 +57,8 @@
               <div class="mechanics-card">
                 <div class="mech-container">
                   <div class="mech-date">
-                    <span>mar</span>
-                    <span class="date">18</span>
+                    <span>Apr</span>
+                    <span class="date">15</span>
                   </div>
                   <div class="mech-icons">
                     <div class="sheets logo-img"></div>
@@ -73,8 +73,8 @@
               <div class="mechanics-card">
                 <div class="mech-container">
                   <div class="mech-date">
-                    <span>mar</span>
-                    <span class="date">18</span>
+                    <span>Apr</span>
+                    <span class="date">15</span>
                   </div>
                   <div class="mech-icons">
                     <div class="cash logo-img"></div>
@@ -88,9 +88,19 @@
               </div>
               <div class="mechanics-card">
                 <div class="mech-container">
-                  <div class="mech-date">
-                    <span>mar</span>
-                    <span class="date">21</span>
+                  <div class="mech-date triple">
+                    <div class="im-date-container">
+                      <span>Apr</span>
+                      <span class="date">18</span>
+                    </div>
+                    <div class="im-date-container">
+                      <span>Apr</span>
+                      <span class="date">25</span>
+                    </div>
+                    <div class="im-date-container">
+                      <span>May</span>
+                      <span class="date">2</span>
+                    </div>
                   </div>
                   <div class="mech-icons">
                     <div class="im-icon logo-img"></div>
@@ -148,6 +158,21 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+.triple {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly !important;
+  align-items: center;
+  flex-direction: row !important;
+  margin: 0 auto;
+  .im-date-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
 #mechanics {
   .timeline-header {
     background-color: $light-orange;
