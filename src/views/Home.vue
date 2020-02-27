@@ -21,7 +21,7 @@
         <div class="about-content">
           <div class="abt-cntnt-wrapper">
             <div class="about-wrapper">
-              <h3>A business competetion that brings IT and business together</h3>
+              <h3>A business competition that brings IT and business together</h3>
             </div>
             <div class="about-sponsors">
               <div class="huawei-container">
