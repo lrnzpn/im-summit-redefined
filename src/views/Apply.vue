@@ -238,11 +238,26 @@
                 </div>
                 <div class="terms">
                   <input type="checkbox" v-model="checked" />
-                  <label for="checkbox">
+                  <label for="checkbox" v-on:click="showTerms">
                     I accept the terms and conditions and privacy
                     policy.
                   </label>
                 </div>
+                <transition name="component-fade" mode="out-in">
+                  <div v-if="terms" class="show-terms">
+                    <p>
+                      <b>Statement 1:</b> I am giving my full consent to the sharing of my personal information with Ateneo MISA for my personnel records.
+                    </p>
+                    <p>
+                      <b>Statement 2:</b> I am giving my full consent to the sharing of my personal information with Ateneo MISA and its respective office/s or committee/s that will be tasked to, (1) create the applicant database; (2) send the applicants' data to the partner organization for recruitment purposes; (3) report data requirements for accreditation purposes and for studies or surveys for improving services provided to the applicants and, (4) announce organization activities through email and SMS messages.
+                    </p>
+
+                    <p>
+                      <b>Statement 3:</b> I am giving my full consent to the sharing of my personal information with SparkUp, subsidiary to Business World, in receiving newsletters to SparkUp’s articles and stories
+                    </p>
+                    <p>Ateneo MISA assure all its applicants of the confidentiality of their personal information, and that the sharing or use of which shall be limited to any or all of the three (3) purposes stated above with the applicant's consent</p>
+                  </div>
+                </transition>
                 <div class="btn-container">
                   <button type="submit" class="btn-navy">apply</button>
                 </div>
@@ -272,11 +287,16 @@ export default {
       SecondMemberName: "",
       SecondMemberCourse: "",
       SecondMemberUniversity: "",
-      WhatisIM: ""
+      WhatisIM: "",
+      terms: false
     };
   },
 
   methods: {
+    showTerms: function() {
+      this.terms = !this.terms;
+      console.log(this.terms);
+    },
     onSubmit: function() {
       if (
         this.checked !== true &&
@@ -484,18 +504,35 @@ export default {
         label {
           color: $navy;
           font-style: italic;
+          text-decoration: underline;
           font-weight: 300;
           font-size: $font-size--4;
           margin: 0;
           @media screen and (max-width: 768px) {
             font-size: $font-size--3;
           }
+          transition: 0.5s all;
         }
 
         input {
           border: 1px solid $navy;
           margin-right: 10px;
         }
+      }
+    }
+
+    .show-terms {
+      transition: 0.5s all;
+      text-align: left;
+
+      p {
+        font-size: $font-size--3;
+        margin: 0.5em 0;
+      }
+
+      b {
+        color: $navy;
+        font-size: $font-size--3;
       }
     }
 
@@ -517,5 +554,14 @@ export default {
       }
     }
   }
+}
+
+.component-fade-enter-active,
+.component-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.component-fade-enter, .component-fade-leave-to
+/* .component-fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
