@@ -289,8 +289,6 @@ export default {
       ) {
         alert("Please complete the necessary fields.");
       } else {
-        alert("Your application form has been sent!");
-
         const formData = new FormData(this.$refs["form"]);
 
         var request;
@@ -300,18 +298,32 @@ export default {
         }
 
         var serializedData = $("form").serialize();
-        console.log(serializedData);
 
         request = $.ajax({
           url:
-            "https://script.google.com/a/obf.ateneo.edu/macros/s/AKfycbw3UuupD1tJrxG95qNSS_X573NnzWZkiro0Efk6/exec",
-          type: "post",
-          data: serializedData
+            "https://script.google.com/macros/s/AKfycbxi5-MfpqdpruawqQxYFbamLS55AfWJEvdUWHlwFOl0M_ua5Rs/exec",
+          type: "POST",
+          data: serializedData,
+          dataType: "json",
+          crossDomain: true
         });
+
+        request.setRequestHeader("Access-Control-Allow-Origin", "*");
+        request.setRequestHeader("Accept", "application/json");
+        request.setRequestHeader(
+          "Access-Control-Allow-Headers",
+          "Origin, Content-Type, Accept, X-Requested-With, X-Auth-Token"
+        );
+        request.setRequestHeader(
+          "Access-Control-Allow-Methods",
+          "GET, POST, OPTIONS"
+        );
 
         request.done(function(response, textStatus, jqXHR) {
           console.log(textStatus);
           console.log(jqXHR);
+          alert("Your application form has been sent!");
+
           location.reload();
         });
 
@@ -320,10 +332,6 @@ export default {
             "The following error occurred: " + textStatus,
             errorThrown
           );
-        });
-
-        request.always(function() {
-          $inputs.prop("disabled", false);
         });
 
         event.preventDefault();
